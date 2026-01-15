@@ -78,15 +78,12 @@ statistic - converstations - ipv4 - lihat collom B - yaitu alamat yang sering di
 Berapakah waktu respons permintaan layanan maksimum untuk paket DNS? 0.467897
 statistic - dns - lihat di respons permintaan / request respons - hasil 
 
-Berapakah jumlah Permintaan HTTP yang dilakukan oleh "rad[.]msn[.]com?"
-39
+Berapakah jumlah Permintaan HTTP yang dilakukan oleh "rad[.]msn[.]com?" ? 39 
+statistic - http - lihat bagian rad.msn - hasil - 39 
 
 Penyaringan Paket | Prinsip-prinsip
 Penyaringan Paket
 Di ruangan sebelumnya ( Wireshark: Dasar-Dasarnya ), kita telah membahas penyaringan paket dan cara menyaring paket tanpa menggunakan kueri. Di ruangan ini, kita akan menggunakan kueri untuk menyaring paket. Seperti yang disebutkan sebelumnya, ada dua jenis filter di Wireshark. Meskipun keduanya menggunakan sintaks yang serupa, keduanya digunakan untuk tujuan yang berbeda. Mari kita ingat perbedaan antara kedua kategori ini.
-
-Filter Tangkap	
-Jenis filter ini digunakan untuk menyimpan hanya bagian tertentu dari lalu lintas. Filter ini diatur sebelum menangkap lalu lintas dan tidak dapat diubah selama proses penangkapan. 
 
 Filter Tampilan	
 Jenis filter ini digunakan untuk menyelidiki paket dengan mengurangi jumlah paket yang terlihat, dan dapat diubah selama proses pengambilan data. 
@@ -259,18 +256,23 @@ Jawablah pertanyaan-pertanyaan di bawah ini.
 
 Berapakah jumlah paket IP?
 81420
+Di filter halaman wire shark , cukup ketik 'ip' untuk memfilter berdasarkan paket IP
 
 Berapakah jumlah paket dengan "nilai TTL kurang dari 10"?
 66
+Di filter wireshark , cukup ketik  ip.ttl<10 ( jangan memakai spacy ) - lihat displayed gambar halaman utama wire shark pojok kanan bawah - hasil 66
 
-Berapakah jumlah paket yang menggunakan "port TCP 4444"?
+Berapakah jumlah paket yang menggunakan "port TCP 4444"? 
 632
+Di filter wireshark , cukup ketik  tcp.port == 4444  - lihat displayed gambar halaman utama wire shark pojok kanan bawah - 632
 
 Berapakah jumlah permintaan "HTTP GET" yang dikirim ke port "80"?
 527
+Di filter wireshark , cukup ketik  http.request.method == "GET"  && tcp.port== 80 - lihat displayed gambar halaman utama wire shark pojok kanan bawah -hasil 527
 
 Berapakah jumlah kueri DNS tipe A?
 51
+Di filter wireshark , cukup ketik - dns.a  - lihat displayed gambar halaman utama wire shark pojok kanan bawah -hasil - 51
 
 Penyaringan Lanjutan
 Penyaringan Lanjutan
