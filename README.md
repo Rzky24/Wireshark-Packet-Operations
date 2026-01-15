@@ -45,20 +45,20 @@ Catatan: Anda memerlukan koneksi internet aktif untuk melihat peta GeoIP. Komput
 
 Jawablah pertanyaan-pertanyaan di bawah ini.
 
-Selidiki alamat yang telah diresolusi. Berapakah alamat IP dari nama host yang diawali dengan "bbc"?
-199.232.24.81
+Selidiki alamat yang telah diresolusi. Berapakah alamat IP dari nama host yang diawali dengan "bbc"?  199.232.24.81
+cara nya buaka file exercise.pcapng - lihat halaman utama wireshark - statistic - pilih resolved addresses - bagian Host - klik bbc- muncul hasil  199.232.24.81
 
-Berapakah jumlah percakapan IPv4?
-435
+Berapakah jumlah percakapan IPv4 ? 435
+statistic - pilih coversations - lihat ipv4 - hasil 435
 
 Berapa banyak byte (k) yang ditransfer dari alamat MAC "Micro-St"?
-7474
+statistic - endpoint - lihat di Micro-St- hasil - 7474
 
-Berapakah jumlah alamat IP yang terkait dengan "Kansas City"?
-4
+Berapakah jumlah alamat IP yang terkait dengan "Kansas City"? 4
+statistic - endpoint - lihat di IPv4 -Kansas City - lihat collum rx packet - 4
 
-Alamat IP mana yang terkait dengan Organisasi AS "Blicnet"?
-188.246.82.7
+Alamat IP mana yang terkait dengan Organisasi AS "Blicnet"? 188.246.82.7
+statistic - endpoint - lihat di colom AS "Blicnet" - hasil 188.246.82.7
 
 Statistik | Detail Protokol
 IPv4 dan IPv6
@@ -72,11 +72,11 @@ Opsi ini menguraikan semua paket HTTP dari file tangkapan dan membantu analis me
 
 Jawablah pertanyaan-pertanyaan di bawah ini.
 
-Apa alamat tujuan IPv4 yang paling sering digunakan?
-10.100.1.33
+Apa alamat tujuan IPv4 yang paling sering digunakan? 10.100.1.33
+statistic - converstations - ipv4 - lihat collom B - yaitu alamat yang sering di gunakan - 10.100.1.33
 
-Berapakah waktu respons permintaan layanan maksimum untuk paket DNS?
-0.467897
+Berapakah waktu respons permintaan layanan maksimum untuk paket DNS? 0.467897
+statistic - dns - lihat di respons permintaan / request respons - hasil 
 
 Berapakah jumlah Permintaan HTTP yang dilakukan oleh "rad[.]msn[.]com?"
 39
